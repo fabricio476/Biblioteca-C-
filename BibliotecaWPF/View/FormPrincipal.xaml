@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="FormPrincipal" Height="450" Width="800">
     <Grid>
-        <Menu Margin="10,10,10,403" Padding="10,0,0,0" VerticalAlignment="Top">
+        <Menu Height="20" Padding="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">
 
             <MenuItem x:Name="btn_home" Header="Home"/>
             <MenuItem x:Name="btn_CadUsuario"  Header="Cadastrar usuário" Click="btn_CadUsuario_Click" />

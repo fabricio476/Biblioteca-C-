@@ -7,12 +7,18 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
-        <Menu x:Name="btn_login" Margin="10,10,10,403" Padding="10,0,0,0" VerticalAlignment="Top">
+        <Menu Height="20" Padding="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">
             <MenuItem x:Name="btn_Home" Header="Home" Click="btn_Home_Click"/>
             <MenuItem x:Name="btn_CadUsuario" Header="Cadastrar Usuario" Click="btn_CadUsuario_Click"  />
             <MenuItem x:Name="btn_Login"  Header="Login" Click="btn_Login_Click"/>
-
         </Menu>
-        
+
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="31,112,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label Content="Senha:" HorizontalAlignment="Left" Margin="24,149,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="31,51,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold" FontSize="20"/>
+        <TextBox  HorizontalAlignment="Left" Margin="78,115,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox  HorizontalAlignment="Left" Margin="78,152,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <Button  Content="Entrar" HorizontalAlignment="Left" Margin="141,194,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold" FontSize="16" />
+
     </Grid>
 </Window>

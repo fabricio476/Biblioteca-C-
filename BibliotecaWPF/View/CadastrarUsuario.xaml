@@ -8,11 +8,20 @@
         Title="CadastrarUsuario" Height="450" Width="800">
     <Grid>
 
-        <Menu Margin="10,10,10,403" Padding="10,0,0,0" VerticalAlignment="Top">
+        <Menu Height="20" Padding="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">
             <MenuItem x:Name="btn_home"   Header="Home" Click="btn_home_Click" />
             <MenuItem x:Name="btn_CadUsuario"  Header="Cadstro Usuario"/>
             <MenuItem x:Name="btn_Login"   Header="Login" Click="btn_Login_Click"/>
         </Menu>
+
+        <TextBox  HorizontalAlignment="Left" Margin="74,96,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" />
+        <TextBox  HorizontalAlignment="Left" Margin="74,119,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <Button  Content="Cadastrar" HorizontalAlignment="Left" Margin="320,107,0,0" VerticalAlignment="Top" Height="41" Width="80"  FontFamily="Consolas" FontWeight="Bold"/>
+        <TextBox  HorizontalAlignment="Left" Margin="74,142,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <Label Content="Cadastrar usuário" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold" FontStyle="Normal" FontSize="20"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="31,93,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="38,116,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Consolas"/>
+        <Label Content="Senha:" HorizontalAlignment="Left" Margin="25,139,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Consolas"/>
 
     </Grid>
 </Window>
