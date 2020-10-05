@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliotecaWPF.DAL;
+using BibliotecaWPF.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,16 +19,18 @@ namespace BibliotecaWPF.View
     /// </summary>
     public partial class Login : Window
     {
+
+        Usuario usuario;
+
         public Login()
         {
             InitializeComponent();
         }
 
-        private void btn_Login_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
 
+
+        //-------------------------------------------------------------------------------
         private void btn_CadUsuario_Click(object sender, RoutedEventArgs e)
         {
 
@@ -44,6 +48,26 @@ namespace BibliotecaWPF.View
             telaHome.Show();
 
             Close(); // fecha a janela atual
+        }
+        //--------------------------------------------------------------------------
+        private void btn_Entrar_Click(object sender, RoutedEventArgs e)
+        {
+
+            string cpf = text_cpf.Text;
+            string senha = text_senha.Text;
+
+            usuario = new Usuario(cpf,senha);
+
+            if (UsuarioDAL.Logar(usuario))
+            {
+
+                MenuUsuario menu = new MenuUsuario();
+                menu.Show();
+
+                Close();
+
+            };
+
         }
     }
 }
