@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliotecaWPF.DAL
 {
-    class Class1
+    class UsuarioDAL
     {
     }
 }

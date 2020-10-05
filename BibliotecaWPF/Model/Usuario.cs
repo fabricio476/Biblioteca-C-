@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliotecaWPF.Model
 {
-    class Class1
+    class Usuario
     {
     }
 }
