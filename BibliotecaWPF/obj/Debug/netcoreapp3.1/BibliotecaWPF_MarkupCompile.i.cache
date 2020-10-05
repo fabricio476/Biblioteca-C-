@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\fabricio\Documents\desenvolvimento de sistemas microsoft\- 1º Bimestre - Projeto C# 2.0\BibliotecaWPF\BibliotecaWPF\App.xaml
-1-1615950195
+5-170041536
 
-10896681139
+14-1035572503
 1921654412462
-View\FormPrincipal.xaml;
+View\CadastrarLivro.xaml;View\CadastrarUsuario.xaml;View\FormPrincipal.xaml;View\Login.xaml;View\MenuUsuario.xaml;
 
-False
+True
 
