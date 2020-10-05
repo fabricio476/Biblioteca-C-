@@ -21,5 +21,27 @@ namespace BibliotecaWPF.View
         {
             InitializeComponent();
         }
+
+
+        private void btn_Login_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            Login login = new Login();
+            login.Show();
+
+            Close(); // fecha a janela atual
+
+        }
+
+        private void btn_home_Click(object sender, RoutedEventArgs e)
+        {
+
+            FormPrincipal telaHome = new FormPrincipal();
+            telaHome.Show();
+
+            Close(); // fecha a janela atual
+
+        }
     }
 }

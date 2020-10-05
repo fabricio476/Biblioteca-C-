@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
+        <Menu x:Name="btn_login" Margin="10,10,10,403" Padding="10,0,0,0" VerticalAlignment="Top">
+            <MenuItem x:Name="btn_Home" Header="Home" Click="btn_Home_Click"/>
+            <MenuItem x:Name="btn_CadUsuario" Header="Cadastrar Usuario" Click="btn_CadUsuario_Click"  />
+            <MenuItem x:Name="btn_Login"  Header="Login" Click="btn_Login_Click"/>
+
+        </Menu>
         
     </Grid>
 </Window>

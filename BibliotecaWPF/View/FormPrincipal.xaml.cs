@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliotecaWPF.Acoes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,27 @@ namespace BibliotecaWPF.View
         public FormPrincipal()
         {
             InitializeComponent();
+        }
+
+        //Metodo que vai abrir a janela de cadastro
+        private void btn_CadUsuario_Click(object sender, RoutedEventArgs e)
+        {
+
+            CadastrarUsuario CadUser = new CadastrarUsuario();
+            CadUser.Show();
+
+            Close(); // fecha a janela atual
+
+        }
+
+        //Metodo que vai abrir a janela de login
+        private void btn_Login_Click(object sender, RoutedEventArgs e)
+        {
+                Login login = new Login();
+                login.Show();
+
+            Close(); // fecha a janela atual
+
         }
     }
 }
