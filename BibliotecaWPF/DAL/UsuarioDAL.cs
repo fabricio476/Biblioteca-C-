@@ -16,7 +16,9 @@ namespace BibliotecaWPF.DAL
         public static bool Logar(Usuario usuario)
         {
 
-           if (usuario.Cpf == "fabricio")
+            
+
+           if (usuario.Cpf=="fabricio")
             {
                 return true;
             }

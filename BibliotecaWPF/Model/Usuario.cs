@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace BibliotecaWPF.Model
 {
+    [Table("Usuario")] //colocar nome da tabela
     class Usuario
     {
 
@@ -17,11 +19,11 @@ namespace BibliotecaWPF.Model
         }
 
 
-
+        public int UsuarioId { get; set; }
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public string senha { get; set; }
-        public Livro livro { get; set; }
+        
 
 
     }
