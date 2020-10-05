@@ -9,7 +9,9 @@ namespace BibliotecaWPF.DAL
     class UsuarioDAL
     {
 
-       static List<Usuario> listaUsuarios = new List<Usuario>();
+        static Contex ctx = new Contex();
+
+        static List<Usuario> listaUsuarios = new List<Usuario>();
 
 
         //metodo que faz o login
